@@ -1,0 +1,334 @@
+html{
+    scroll-behavior: smooth;
+    /* scroll-margin: 10rem ; */
+    scroll-snap-type: mandatory;
+}
+hr{
+    border: 0;
+    border-bottom: 10px solid rgb(179, 179, 179);
+    border-style: dotted;
+    width: 5%;
+    margin: 2rem auto ;
+}
+#title{
+    /* width: 100%;
+    height: 100vh; */
+    /* position: relative; */
+    /* background-image: url("./images/bg-img.jpg");
+    object-fit: cover;
+    color: white; */
+
+
+}
+.bg-img{
+    background-image: url("./images/bg-img.jpg");
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    color: white;
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    /* z-index: 1; */
+    /* overflow-y: scroll; */
+    
+    
+}
+#navbar{
+    background-color: black;
+}
+.nav-item{
+    font-size: 1.2rem;
+}
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+.nav-link::after{
+    content: '';
+    transition: all 0.2s;
+    opacity: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.nav-link:hover::after{
+    content: '';
+    opacity: 1;
+}
+.grey-color{
+    color: #9A9A9A;
+}
+.main-heading{
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #c5c5c5 !important;
+    /* background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%) !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: 'Outfit', sans-serif;
+}
+.my-btn{
+    font-size: 1.2rem;
+}
+.about-me{
+    font-size: 1.3rem;
+}
+.about-me-text{
+    font-size: 20px;
+}
+.question-text{
+    font-size: 3rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edf3fc;
+    /* background: #e1e8f0; */
+    /* background-color: #a4b2b8; */
+    width: 100%;
+    border-radius: 25px;
+    margin: 0 0 30px;
+    
+    
+}
+.info{
+    margin: 0 1rem 0 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6.25rem 0 12.5rem;
+
+}
+h3.about-me{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.portfolio-image{
+    max-width: 400px; 
+    border: none; 
+    height: auto;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.portfolio-btn{
+    background: #345582;
+    border-color: #345582;
+    font-weight: 700;
+    color: white;
+    padding: 17px 45px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+transition: all .3s;
+border-radius: 30px ;
+}
+.portfolio-btn:hover{
+    background-color: white;
+    color: #345582;
+}
+#contact-me{
+    background-color: black;
+    color: white !important;
+}
+#contact-me h1{
+    color: white !important;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.btn:hover{
+    color: white ;
+    background-color: rgba(255, 255, 255, 0.144) ;
+}
+h1.contact-msg{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* #footer{
+    background-color: black;
+    color: white !important;
+} */
+
+.footer-text{
+    color: white !important;
+}
+.about-me-page{
+    height: 30vh;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 900;
+}
+.about-me-page h1{
+    padding: 1rem  0 1rem 0;
+    font-size: 3.5rem;
+}
+/* Contact  */
+.contact-flex{
+    display: flex;
+}
+.form{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    
+}
+.form input, .form textarea{
+    color: #dfdfdf;
+    font-weight: 400;
+    width: 30rem;
+    min-width: 20rem;
+    margin: 1rem;
+    padding: 1.2rem;
+    /* padding-right: 10rem; */
+    /* border-color: #f0f0f0; */
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+.spacer{
+    flex: 0.5;
+}
+.social-icons{
+    flex: 2;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.icons{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.icons i{
+    justify-content: center;
+    margin-right: 5rem;
+    color: #999999;
+}
+
+.fb:hover{
+    color: rgb(0, 140, 255) ;
+}
+.linkedin:hover{
+    color: rgb(0, 140, 255) ;
+}
+.github:hover{
+    color: black;
+}
+
+.contact-hr{
+    border: 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    margin: 2rem auto ;
+}
+.msg-btn{
+    border: 2px solid black;
+    background-color: #ffffff;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-bottom: 8rem;
+    border-radius: 5px;
+    color: black;
+
+}
+.msg-btn:hover{
+    color: black !important;
+    border: 2px solid black !important;
+    background-color: #ececec80 !important;
+}
+@media (max-width:991px) {
+    .navbar-brand img{
+        height: 32px;
+        /* width: 150px; */
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+
+    .title{
+        padding: 0 !important;
+    }
+    #about-me p{
+        text-align: center !important;
+    }
+    .about-row{
+        flex-direction: column-reverse;
+    }
+    .my-img{
+        width: 100%;
+        height: 100%;
+    }
+    .flexbox{
+        text-align: center;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        
+    }
+    .info{
+        padding: 0;
+        margin: 1rem;
+    }
+    .portfolio-image{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        /* text-align: center; */
+        /* height: 100vh; */
+        border-radius: 25px;
+    }
+    .bg-img{
+        /* height: 110vh; */
+    }
+    .my-btn{
+        margin-bottom: 3rem;
+    }
+    .contact-flex{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+.form{
+    flex: 2;
+}
+    .form input, .form textarea{
+        width: 100%;
+        /* margin-right: 2rem; */
+        min-width: 5rem;
+        margin: 1rem 0;
+    }
+    .spacer{
+        flex: 0;
+    }
+    hr{
+        width: 20%;
+    }
+    .footer{
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        flex-wrap: wrap !important;
+        /* width: 50%; */
+        justify-content: center !important;
+        align-items: center;
+    }
+    p.footer-text{
+        margin-top: 1rem !important;
+    }
+    .contact-hr{
+        display: none;
+
+    }
+    .social-icons{
+        width: 70%;
+        margin-left: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+    .icons i{
+        margin-right: 1.5rem;
+    }
+    #contact-me h1{
+        font-size: 2.5rem;
+    }
+}
